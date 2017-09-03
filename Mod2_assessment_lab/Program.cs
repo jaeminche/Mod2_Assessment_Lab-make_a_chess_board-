@@ -10,27 +10,25 @@ namespace Mod2_assessment_lab
     {
         static void Main(string[] args)
         {
-            string a = "XOXOXOXO";
-            string b = "OXOXOXOX";
+            string a = "XO";
+            string b = "OX";
             for (int rowCount = 0; rowCount < 8; rowCount++)
             {
-                //string b = for (int XOCount = 0; XOCount < 4; XOCount ++) { Console.Write(a); };
                 if ((rowCount + 2) % 2 != 0 )
                 {
-                    Console.WriteLine(b);
-                    //    //for (int XOCount = 0; XOCount < 4; XOCount++)
-                    //    //{
-                    //    Console.WriteLine(a);
-                    //    //}
-                    //}
-
-                    //Console.WriteLine(for (int letterCount = 0; letterCount < 4; letterCount++)
-                    //        {Console.Write(a);});   
-                    ////}
+                    for (int bCount = 0; bCount < 4; bCount++)
+                    {
+                        Console.Write(b);
+                    }
+                    Console.WriteLine("");
                 }
                 else
                 {
-                    Console.WriteLine(a);
+                    for (int aCount = 0; aCount < 4; aCount++)
+                    {
+                        Console.Write(a);
+                    }
+                    Console.WriteLine("");
                 }
             }
         }
